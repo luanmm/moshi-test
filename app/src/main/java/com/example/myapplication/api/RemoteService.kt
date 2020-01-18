@@ -4,6 +4,6 @@ import retrofit2.http.GET
 
 interface RemoteService {
 
-    @GET("/test")
+    @GET("api.json")
     suspend fun <T> test(): Result<T>
 }
